@@ -34,13 +34,13 @@ py -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 Copy-Item .env.example .env
-python -m fronteira
+python -m border
 ```
 
 Caso o PowerShell bloquear a ativação do ambiente virtual, você pode executar o Python diretamente:
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m fronteira
+.\.venv\Scripts\python.exe -m border
 ```
 
 No VS Code, selecione o interpretador da pasta `.venv`:
@@ -54,20 +54,21 @@ python -m pytest
 
 ## Estrutura
 
-- `src/fronteira/cli/`: interação com o terminal
-- `src/fronteira/application/`: coordenação dos casos de uso
-- `src/fronteira/domain/`: regras e conceitos do domínio
-- `src/fronteira/repositories/`: acesso aos dados
-- `src/fronteira/infrastructure/`: configuração e recursos técnicos
+- `src/border/cli/`: interação com o terminal
+- `src/border/application/`: coordenação dos casos de uso
+- `src/border/domain/`: regras e conceitos do domínio
+- `src/border/repositories/`: acesso aos dados
+- `src/border/infrastructure/`: configuração e recursos técnicos
 - `tests/`: testes automatizados
 - `sql/`: scripts SQL que serão usados nas próximas etapas
 - `docs/`: documentação de arquitetura e regras
 
 ## Estado atual
 I - estrutura do projeto, tabelas, menu de terminal e teste inicial.
-
-# Próximas etapas
 II - Conexão com banco de dados em MySQL.
+
+## Próximas etapas
+III - Implementar modelos Python e repositórios e viajantes e documentos, por meio de consultas parametrizadas e operações em MySQL.
 
 # ENG-US
 
@@ -90,13 +91,13 @@ py -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 Copy-Item .env.example .env
-python -m fronteira
+python -m border
 ```
 
 If PowerShell blocks the activation of the virtual environment, you can run Python directly:
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m fronteira
+.\.venv\Scripts\python.exe -m border
 ```
 
 In VS Code, select the interpreter from the `.venv` folder:
@@ -110,20 +111,21 @@ python -m pytest
 
 ## Structure
 
-- `src/fronteira/cli/`: terminal interaction
-- `src/fronteira/application/`: coordination of use cases
-- `src/fronteira/domain/`: domain rules and concepts
-- `src/fronteira/repositories/`: data access
-- `src/fronteira/infrastructure/`: configuration and technical resources
+- `src/border/cli/`: terminal interaction
+- `src/border/application/`: coordination of use cases
+- `src/border/domain/`: domain rules and concepts
+- `src/border/repositories/`: data access
+- `src/border/infrastructure/`: configuration and technical resources
 - `tests/`: automated tests
 - `sql/`: SQL scripts to be used in future stages
 - `docs/`: architecture and rules documentation
 
 ## Current Status
 I - Project structure, tables, terminal menu, and initial test.
+II - Connection to a MySQL database.
 
 # Next Steps
-II - Connection to a MySQL database.
+III - Implement Python models, repositories, travelers, and documents using parameterized queries and operations in MySQL.
 
 # DEU-DE Grenzkontrolle
 
@@ -146,13 +148,13 @@ py -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 Copy-Item .env.example .env
-python -m fronteira
+python -m border
 ```
 
 Falls PowerShell die Aktivierung der virtuellen Umgebung blockiert, können Sie Python auch direkt ausführen:
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m fronteira
+.\.venv\Scripts\python.exe -m border
 ```
 
 Wählen Sie in VS Code den Interpreter aus dem Ordner `.venv` aus:
@@ -166,17 +168,18 @@ python -m pytest
 
 ## Struktur
 
-- `src/fronteira/cli/`: Interaktion über das Terminal
-- `src/fronteira/application/`: Koordination der Anwendungsfälle (Use Cases)
-- `src/fronteira/domain/`: Domänenregeln und -konzepte
-- `src/fronteira/repositories/`: Datenzugriff
-- `src/fronteira/infrastructure/`: Konfiguration und technische Ressourcen
+- `src/border/cli/`: Interaktion über das Terminal
+- `src/border/application/`: Koordination der Anwendungsfälle (Use Cases)
+- `src/border/domain/`: Domänenregeln und -konzepte
+- `src/border/repositories/`: Datenzugriff
+- `src/border/infrastructure/`: Konfiguration und technische Ressourcen
 - `tests/`: Automatisierte Tests
 - `sql/`: SQL-Skripte für zukünftige Schritte
 - `docs/`: Dokumentation der Architektur und Regeln
 
 ## Aktueller Stand
 I – Projektstruktur, Tabellen, Terminal-Menü und erster Test.
+II - Anbindung an eine MySQL-Datenbank.
 
 ## Nächste Schritte
-II – Anbindung an eine MySQL-Datenbank.
+III – Implementierung von Python-Modellen, Repositories, Reisenden und Dokumenten mittels parametrisierter Abfragen und Operationen in MySQL.
